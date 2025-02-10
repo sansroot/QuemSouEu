@@ -75,7 +75,6 @@
             font-weight: 400;
             font-style: normal;
             padding: 20px;
-            text-shadow: 1px 1px 5px #9382a7;
         }
 
         .texto {
@@ -83,7 +82,7 @@
             text-shadow: 1px 1px 5px #9382a7;
         }
 
-        img {
+        .img {
             border-radius: 100%;
             border-width: 3px;
             border-style: solid;
@@ -92,19 +91,27 @@
 
         .link {
             background-color: #cba6f7;
-            padding: 0.2em;
-            font-size: 0.8em;
+            padding: 0.3em;
+            font-size: 1em;
+            margin: 0.1em;
             text-decoration: none;
+            text-align: center;
+            justify-content: center;
+            justify-items: center;
+            justify-self: center;
+            border-radius: 0.5em;
         }
 
         .link:hover {
             animation: cores 2s infinite;
         }
 
-
-
         h1 {
             animation: colorChange 5s infinite;
+        }
+
+        .logo {
+            width: 0.9em;
         }
     </style>
 </head>
@@ -112,19 +119,34 @@
 <body>
     <div class="conteudo">
         <h1>Quem sou eu?</h1>
-        <img onmouseover="trocar()" onmouseleave="trocar1()" id="img1" src="perfil1.jpg" alt="" width="200px">
+        <img class="img" onmouseover="trocar()" onmouseleave="trocar1()" id="img1" src="perfil1.jpg" alt="" width="200px">
         <br><br><br>
         <div class="social">
-            <a class="link" href="https://www.linkedin.com/in/felipe-sanches-689a1b205/" target="_blank">Linkedin</a>
-            <a class="link" href="https://github.com/sansroot" target="_blank">Github</a>
-            <a class="link" href="https://drive.google.com/drive/folders/1Z_A1ESh4wq9Eez_Vo3Qwzt34dSyo0sEU?usp=sharing" target="_blank">Certificados</a>
-            <a class="link" href="https://sansroot.github.io/My-Rices/" target="_blank">Linux</a>
+            <a class="link" href="https://www.linkedin.com/in/felipe-sanches-689a1b205/" target="_blank">
+                <img class="logo" src="linkedin.png" alt=""> Linkedin
+            </a>
+
+            <a class="link" href="https://github.com/sansroot" target="_blank">
+                <img class="logo" src="github.png" alt=""> Github
+            </a>
+
+            <a class="link" href="https://drive.google.com/drive/folders/1Z_A1ESh4wq9Eez_Vo3Qwzt34dSyo0sEU?usp=sharing" target="_blank">
+                <img class="logo" src="certificado.png" alt=""> Certificados
+            </a>
+            <a class="link" href="https://sansroot.github.io/My-Rices/" target="_blank">
+                <img src="tux.png" class="logo" alt=""> Linux
+            </a>
         </div>
         <br>
-        <p class="texto">Meu nome é Felipe Sanches, tenho 23 anos e estou em busca de oportunidades na área de desenvolvimento de software. Tenho experiência em diversas tecnologias como Git, GitHub, HTML, CSS, Python, JavaScript e sou familiarizado com sistemas operacionais como Linux, Windows e macOS.<br><br>
-            Além disso, possuo vasta experiência em redes de computadores, trabalhando com roteadores e switches das marcas Cisco, Fortinet e Huawei. Também tenho experiência com a ferramenta Ekahau, tendo realizado mais de 700 site surveys preditivos para agências do Banco Itaú em todo o Brasil, e com SD-WAN, adquirindo uma boa compreensão de soluções de rede.<br><br>
-            Estou em busca de me desenvolver cada vez mais como desenvolvedor e aplicar minhas habilidades em novos projetos, com foco em aprender e crescer na área de tecnologia.</p>
+        <p class="texto">
+            Meu nome é Felipe Sanches, tenho 23 anos e estou em busca de oportunidades na área de desenvolvimento de software. Tenho experiência em diversas tecnologias como Git, GitHub, HTML, CSS, Python, JavaScript e sou familiarizado com sistemas operacionais como Linux, Windows e macOS.
+            <br><br>
+            Além disso, possuo vasta experiência em redes de computadores, trabalhando com roteadores e switches das marcas Cisco, Fortinet e Huawei. Também tenho experiência com a ferramenta Ekahau, tendo realizado mais de 700 site surveys preditivos para agências do Banco Itaú em todo o Brasil, e com SD-WAN, adquirindo uma boa compreensão de soluções de rede.
+            <br><br>
+            Estou em busca de me desenvolver cada vez mais como desenvolvedor e aplicar minhas habilidades em novos projetos, com foco em aprender e crescer na área de tecnologia.
+        </p>
     </div>
+
     <script>
         function trocar() {
             document.getElementById("img1").src = "perfil.jpg";
