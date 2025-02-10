@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eu!</title>
+    <link rel="icon" href="icone.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1e1e2e;
+        }
+
+        @keyframes colorChange {
+            0% {
+                color: #a6e3a1;
+                text-shadow: 1px 1px 5px #a6e3a1;
+            }
+
+            25% {
+                color: #eba0ac;
+                text-shadow: 1px 1px 5px #eba0ac;
+            }
+
+            50% {
+                color: #fab387;
+                text-shadow: 1px 1px 5px #fab387;
+            }
+
+            75% {
+                color: #cba6f7;
+                text-shadow: 1px 1px 5px #cba6f7;
+            }
+
+            100% {
+                color: #a6e3a1;
+                text-shadow: 1px 1px 5px #a6e3a1;
+            }
+        }
+
+        @keyframes cores {
+            0% {
+                background-color: #cba6f7;
+            }
+
+            25% {
+                background-color: #eba0ac;
+            }
+
+            50% {
+                background-color: #fab387;
+            }
+
+            75% {
+                background-color: #a6e3a1;
+            }
+
+            100% {
+                background-color: #cba6f7;
+            }
+        }
+
+        .conteudo {
+            margin: auto;
+            width: 80%;
+            height: 50%;
+            text-align: center;
+            background-color: #1e1e2e;
+            border-radius: 10px;
+            color: #cba6f7;
+            font-family: "Silkscreen", serif;
+            font-weight: 400;
+            font-style: normal;
+            padding: 20px;
+            text-shadow: 1px 1px 5px #9382a7;
+        }
+
+        .texto {
+            text-align: justify;
+            text-shadow: 1px 1px 5px #9382a7;
+        }
+
+        img {
+            border-radius: 100%;
+            border-width: 3px;
+            border-style: solid;
+            box-shadow: 0px 0px 20px #9382a7;
+        }
+
+        .link {
+            background-color: #cba6f7;
+            padding: 0.2em;
+            font-size: 0.8em;
+            text-decoration: none;
+        }
+
+        .link:hover {
+            animation: cores 2s infinite;
+        }
+
+        hr {
+            color: #cba6f7;
+        }
+
+        h1 {
+            animation: colorChange 5s infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="conteudo">
+        <h1>Quem sou eu?</h1>
+        <img onmouseover="trocar()" onmouseleave="trocar1()" id="img1" src="perfil1.jpg" alt="" width="200px">
+        <br>
+        <br>
+        <hr>
+        <div class="social">
+            <a class="link" href="https://www.linkedin.com/in/felipe-sanches-689a1b205/" target="_blank">Linkedin</a>
+            <a class="link" href="https://github.com/sansroot" target="_blank">Github</a>
+            <a class="link" href="https://drive.google.com/drive/folders/1Z_A1ESh4wq9Eez_Vo3Qwzt34dSyo0sEU?usp=sharing" target="_blank">Certificados</a>
+            <a class="link" href="https://sansroot.github.io/My-Rices/" target="_blank">Linux</a>
+        </div>
+        <hr>
+        <br>
+        <p class="texto">Meu nome é Felipe Sanches, tenho 23 anos e estou em busca de oportunidades na área de desenvolvimento de software. Tenho experiência em diversas tecnologias como Git, GitHub, HTML, CSS, Python, JavaScript e sou familiarizado com sistemas operacionais como Linux, Windows e macOS.<br><br>
+            Além disso, possuo vasta experiência em redes de computadores, trabalhando com roteadores e switches das marcas Cisco, Fortinet e Huawei. Também tenho experiência com a ferramenta Ekahau, tendo realizado mais de 700 site surveys preditivos para agências do Banco Itaú em todo o Brasil, e com SD-WAN, adquirindo uma boa compreensão de soluções de rede.<br><br>
+            Estou em busca de me desenvolver cada vez mais como desenvolvedor e aplicar minhas habilidades em novos projetos, com foco em aprender e crescer na área de tecnologia.</p>
+    </div>
+    <script>
+        function trocar() {
+            document.getElementById("img1").src = "perfil.jpg";
+        }
+
+        function trocar1() {
+            document.getElementById("img1").src = "perfil1.jpg";
+        }
+    </script>
+</body>
+
+</html>
