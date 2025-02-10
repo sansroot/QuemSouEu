@@ -100,6 +100,9 @@
             justify-items: center;
             justify-self: center;
             border-radius: 0.5em;
+            color: black;
+            display: inline-block;
+            width: auto; 
         }
 
         .link:hover {
@@ -112,6 +115,20 @@
 
         .logo {
             width: 0.9em;
+        }
+
+        @media (max-width: 600px) {
+            .link {
+                width: 100%;
+                padding: 1em; 
+                font-size: 1.0em;
+                text-align: center;
+                margin: 0.5em 0; 
+            }
+
+            .social {
+                display: block; 
+            }
         }
     </style>
 </head>
@@ -141,21 +158,4 @@
         <p class="texto">
             Meu nome é Felipe Sanches, tenho 23 anos e estou em busca de oportunidades na área de desenvolvimento de software. Tenho experiência em diversas tecnologias como Git, GitHub, HTML, CSS, Python, JavaScript e sou familiarizado com sistemas operacionais como Linux, Windows e macOS.
             <br><br>
-            Além disso, possuo vasta experiência em redes de computadores, trabalhando com roteadores e switches das marcas Cisco, Fortinet e Huawei. Também tenho experiência com a ferramenta Ekahau, tendo realizado mais de 700 site surveys preditivos para agências do Banco Itaú em todo o Brasil, e com SD-WAN, adquirindo uma boa compreensão de soluções de rede.
-            <br><br>
-            Estou em busca de me desenvolver cada vez mais como desenvolvedor e aplicar minhas habilidades em novos projetos, com foco em aprender e crescer na área de tecnologia.
-        </p>
-    </div>
-
-    <script>
-        function trocar() {
-            document.getElementById("img1").src = "perfil.jpg";
-        }
-
-        function trocar1() {
-            document.getElementById("img1").src = "perfil1.jpg";
-        }
-    </script>
-</body>
-
-</html>
+            Além disso, possuo vasta experiência em redes de computadores, trabalhando com roteadores e switches das m
