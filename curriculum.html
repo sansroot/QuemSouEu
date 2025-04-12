@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eu!</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url("wallpaper.png");
+            background-attachment: fixed;
+        }
+
+        @keyframes colorChange {
+            0% {
+                color: #a6e3a1;
+                text-shadow: 1px 1px 5px #a6e3a1;
+            }
+
+            25% {
+                color: #eba0ac;
+                text-shadow: 1px 1px 5px #eba0ac;
+            }
+
+            50% {
+                color: #fab387;
+                text-shadow: 1px 1px 5px #fab387;
+            }
+
+            75% {
+                color: #cba6f7;
+                text-shadow: 1px 1px 5px #cba6f7;
+            }
+
+            100% {
+                color: #a6e3a1;
+                text-shadow: 1px 1px 5px #a6e3a1;
+            }
+        }
+
+        @keyframes cores {
+            0% {
+                background-color: #cba6f7;
+            }
+
+            25% {
+                background-color: #eba0ac;
+            }
+
+            50% {
+                background-color: #fab387;
+            }
+
+            75% {
+                background-color: #a6e3a1;
+            }
+
+            100% {
+                background-color: #cba6f7;
+            }
+        }
+
+        .conteudo {
+            margin: auto;
+            width: 80%;
+            height: 50%;
+            text-align: center;
+            background-color: transparent;
+            border-radius: 10px;
+            color: #cba6f7;
+            font-family: "Silkscreen", serif;
+            font-weight: 400;
+            font-style: normal;
+            padding: 20px;
+        }
+
+        .texto {
+            text-align: justify;
+            text-shadow: 1px 1px 5px #9382a7;
+        }
+
+        .img {
+            border-radius: 100%;
+            border-width: 3px;
+            border-style: solid;
+            box-shadow: 0px 0px 20px #9382a7;
+        }
+
+        .link {
+            background-color: #cba6f7;
+            padding: 0.4em;
+            font-size: 1em;
+            margin: 0.1em;
+            text-decoration: none;
+            text-align: center;
+            justify-content: center;
+            justify-items: center;
+            justify-self: center;
+            border-radius: 0.5em;
+            color: black;
+            display: inline-block;
+            width: auto;; 
+        }
+
+        .link:hover {
+            animation: cores 2s infinite;
+        }
+
+        .logo {
+            width: 0.9em;
+        }
+
+        @media (max-width: 600px) {
+            .link {
+                width: 80%;
+                padding: 1em; 
+                font-size: 1.0em;
+                text-align: center;
+                margin: 0.5em; 
+            }
+
+            .social {
+                display: block; 
+            }
+        }
+        .item{
+            font-size: 1.3em;
+            text-align: left;
+            margin-top: 1.5em;
+            margin-bottom: 2em;
+            text-shadow: 1px 1px 5px #cba6f7;
+        }
+        h1{
+            text-align: center;
+            margin-bottom: 1.5em;
+            margin-top: 2em;
+            animation: colorChange 5s infinite;
+            font-size: 2.0em;
+        }
+        hr{
+            color: #cba6f7;
+        }
+        h2{
+            text-align: left;
+            animation: colorChange 5s infinite;
+        }
+        .botao{
+            left: 1%;
+            top: 1.5%;
+            color: #cba6f7;
+            text-decoration: none;
+            background-color: transparent;
+            position: fixed;
+            padding: 0.1em;
+            font-family: "Silkscreen", serif;
+            border-radius: 5px;
+            font-size: 1.5em;
+            text-shadow: 1px 1px 5px #cba6f7;
+
+        }
+        .botao:hover{
+            animation: colorChange 1s infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <a class="botao" href="index.html"><-</a>
+    
+    <div class="conteudo">
+        <h1>curriculum</h1>
+        <h2>Objetivo profissional</h1>
+        <hr>
+        <ul>
+            <li class="item">Análise e desenvolvimento de sistemas Jr. (front e back end)</li>
+        </ul>
+        <h2>formação</h1>
+        <hr>
+        <ul>
+            <li class="item">Análise e desenvolvimento de sistemas, Fiap (ago/2024 - ago/2026)</li>
+            <li class="item">Redes de computadores, Católica de Brasília (fev/2022 - ago/2024)</li>
+            <li class="item">Segurança da informação, Pato Academy (out/2024 - jun/2025)</li>
+        </ul>
+        <h2>desenvolvimento</h1>
+        <hr>
+        <ul>
+            <li class="item">Rotinas em Python usando lista, tupla, dicionário e função.</li>
+            <li class="item">Rotinas em Shell Script utilizando Arch Linux, Void Linux, Red Hat
+                Linux, CentOS e Debian.</li>
+            <li class="item">Páginas em HTML5, CSS3 e JavaScript.</li>
+            <li class="item">repositórios em git, github e gitlab.</li>
+            
+        </ul>
+        <h2>redes e infraestrutura</h1>
+        <hr>
+        <ul>
+            <li class="item">Configuração e gerenciamento: Experiência em configuração,
+                administração e manutenção de redes, incluindo roteadores, switches,
+                firewalls. Conhecimento do conjunto de protocolos TCP-IP e subnetting,
+                proporcionando otimização, segurança, melhoria de desempenho e
+                flexibilidade de redes.</li>
+            <li class="item">Segurança: Implementação e gestão de medidas de segurança, como
+                firewalls, ACLs e IPSec. Experiência em Pentest utilizando ferramentas como
+                Kali Linux e Metasploit com foco na identificação de vulnerabilidades.</li>
+            <li class="item">Troubleshooting: Resolução eficiente de problemas em ambientes Cisco,
+                Windows e Linux, garantindo a alta disponibilidade e segurança da
+                infraestrutura.</li>
+            <li class="item">Monitoramento e análise: Apto a realizar tanto coleta e análise de dados de
+                desempenho da rede para identificar gargalos e otimizar a infraestrutura,
+                quanto assessments de SD-WAN para avaliar a viabilidade e implementar
+                soluções de agilidade, segurança e escalabilidade de redes.</li>
+        </ul>
+        <h2>sistemas operacionais</h1>
+        <hr>
+        <ul>
+            <li class="item">Instalação e configuração: Experiência em instalação, configuração e
+                administração de sistemas operacionais Windows, Unix, macOS, Linux e
+                suas distribuições.</li>
+        </ul>
+        <h2>Suporte técnico</h1>
+        <hr>
+        <ul>
+            <li class="item">Atendimento ao cliente: Atendimento técnico presencial e remoto,
+                utilizando ferramentas de Service Desk. Resolução de problemas de
+                hardware e software.</li>
+            <li class="item">Documentação técnica: Criação e manutenção de documentação técnica
+                para processos e procedimentos, garantindo a padronização e a qualidade.</li>
+        </ul>
+        <h2>habilidades adicionais</h1>
+        <hr>
+        <ul>
+            <li class="item">Produtividade: Microsoft Office, LibreOffice, OpenOffice, OneNote, edição
+                de imagens e vídeos, Adobe Premiere, After Effects, Photoshop e GIMP.</li>
+            <li class="item">Soft skills: Trabalho em equipe, proatividade, comunicação eficaz,
+                capacidade de adaptação a novas tecnologias e apto a viagens nacionais e
+                internacionais, quando necessário.</li>
+            
+        </ul>
+        <hr>
+        <h1>Experiência</h1>
+        <h2>Vivo Vita - Field Engineer (abr/2021 - set/2024)</h1>
+            <hr>
+            <ul>
+                <li class="item">Gerenciamento das topologias de rede das fábricas Suzano Papel e
+                    Celulose, AptarGroup Inc e Banco BTG Pactual no ENTUITY Software.</li>
+                <li class="item">Instalação e Configuração de equipamentos, roteadores e switches Cisco em
+                    diversas empresas, incluindo Trisul S.A., COMGAS, InWave, Grupo
+                    Votorantim, B3 e CCR Aeroportos.</li>
+                <li class="item">Licenciamento e Gestão de licenças IOS para a Trisul S.A., COMGAS, B3 e
+                    outras empresas.</li>
+                <li class="item">Validação de equipamentos na STATE e coleta de evidências do Fortigate.</li>
+                <li class="item">Site surveys: Realização de levantamentos de campo em diversas empresas,
+                    incluindo Trisul, B3/Bolsa de Valores, Trimais, Banco Itaú e outras, para
+                    análise da infraestrutura de rede e planejamento de projetos.</li>
+                <li class="item">Elaboração de documentação técnica para propostas e entrega de serviços
+                    a clientes.</li>
+                <li class="item">Realização de site surveys preditivos em mais de 600 agências do Banco
+                    Itaú, com elaboração de documentação técnica e reuniões diretas com o
+                    cliente para entrega e acompanhamento do serviço.</li>
+                <li class="item">SD-WAN: Execução de assessment de SD-WAN para otimização da
+                    infraestrutura de rede do Grupo Hermes Pardini.</li>
+                <li class="item">Atendimento presencial para correção de erros DTLS em CCR Aeroportos e
+                    outros clientes, tanto dentro da cidade de São Paulo, quanto interior e outros
+                    Estados.</li>           
+            </ul>  
+        <hr>
+    </div>
+    <script>
+    </script>
+</body>
+
+</html>
